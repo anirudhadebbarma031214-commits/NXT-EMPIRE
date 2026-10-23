@@ -54,7 +54,6 @@ if(now-S.lastDayAt>=60000){S.lastDayAt=now;S.day++;S.cash-=750*S.hq;S.expenses+=
 S.lastDayAt=Date.now();render();setInterval(tick,1000);
 window.NXTReward=function(cash,hype){S.cash+=cash;S.hype=clamp(S.hype+hype,0,100);log('City Dash reward: ++cash+' and +'+hype+' hype.');save();stats();toast('CITY DASH REWARD ++cash.toLocaleString());};
 })();
-</script>
 /* NXT EMPIRE 2D ARCADE EXPANSION */
 const arcadeStyle=document.createElement('style');
 arcadeStyle.textContent=`
